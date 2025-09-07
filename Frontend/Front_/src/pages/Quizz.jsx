@@ -133,10 +133,10 @@ const submitResult = async () => {
               Your Score: {score} / {quiz.length}
             </p>
             <button
-              onClick={() => navigate(`/resources`)}
+              onClick={() => navigate(`/domains`)}
               className="px-6 py-2 bg-purple-600 rounded-full hover:bg-purple-700 transition-colors"
             >
-              Back to Resource
+              Back to Resources
             </button>
           </div>
         )}

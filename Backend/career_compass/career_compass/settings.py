@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'domains',
+    'rest_framework',
     'corsheaders',
 ]
 
@@ -128,3 +129,14 @@ CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",  # Your frontend dev server
 ]
+# Email configuration for Magic Link
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'harinihasi958@gmail.com'       # 👈 Replace with yours
+EMAIL_HOST_PASSWORD = 'hh79ss13'    # 👈 Replace with yours
+
+# JWT Secret
+import os
+JWT_SECRET_KEY = os.environ.get('JWT_SECRET_KEY', 'super-secret')

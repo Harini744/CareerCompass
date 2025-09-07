@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "../components/Navbar";
 import FooterPage from "../components/Footer";
-import RecommendedDomain from "./Recommended";
+
 
 const QuizDashboard = () => {
   const [results, setResults] = useState([]);
@@ -76,7 +76,7 @@ const QuizDashboard = () => {
           )}
         </div>
       </div>
-      <RecommendedDomain />
+      
       <FooterPage />
     </>
   );

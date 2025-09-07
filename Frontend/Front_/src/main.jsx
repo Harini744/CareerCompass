@@ -11,9 +11,11 @@ import ContactPage from './pages/Contact.jsx';
 import AboutPage from './pages/About.jsx';
 import QuizPage from './pages/Quizz.jsx';
 import QuizDashboard from './pages/Dashboard.jsx';
+import LoginPage from './pages/LoginRegister.jsx';
 
 const router = createBrowserRouter([
   { path: '/', element: <Home /> },
+  {path:'/login', element:<LoginPage /> },
   {path:'/domains', element:<ResourcePage /> },
   { path: '/about', element: <AboutPage /> },
   {path: '/contact', element: <ContactPage /> },
